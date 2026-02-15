@@ -10,13 +10,13 @@ const red: Color = new Color();
 let strings: string[] = ['red', 'green', 'blue'];
 let numbers: number[] = [1, 2, 3];
 let booleans: boolean[] = [true, true, false];
-// type annotation with object literal
+// annotations around object letiral
 let position: { x: number; y: number } = {
   x: 10,
   y: 20,
 };
-
-// type annotation around functions
+console.log(strings);
+// annotations around functions
 const logNumber: (i: number) => void = (i: number): void => {
   console.log(i);
 };
