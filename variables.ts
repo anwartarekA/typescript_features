@@ -16,7 +16,7 @@ let position: { x: number; y: number } = {
   y: 20,
 };
 
-// type annotation around function
+// type annotation around functions
 const logNumber: (i: number) => void = (i: number): void => {
   console.log(i);
 };
