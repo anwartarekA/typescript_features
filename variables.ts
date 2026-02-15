@@ -26,3 +26,10 @@ logNumber(100);
 let json = '{x:10,y:20}';
 let jsonParse: { x: number; y: number } = JSON.parse(json);
 console.log(jsonParse.x);
+
+// use annotations when we declare variable but initialze it later
+let colors = ['red', 'green', 'blue'];
+let word: string;
+for (let i = 0; i < colors.length; i++) {
+  if (colors[i] === 'green') word = colors[i];
+}
