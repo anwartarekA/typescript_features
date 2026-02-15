@@ -21,3 +21,8 @@ const logNumber: (i: number) => void = (i: number): void => {
   console.log(i);
 };
 logNumber(100);
+
+// the any type
+let json = '{x:10,y:20}';
+let jsonParse: { x: number; y: number } = JSON.parse(json);
+console.log(jsonParse.x);
