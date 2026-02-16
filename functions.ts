@@ -13,3 +13,11 @@ function devide(a: number, b: number): number {
   return a / b;
 }
 console.log(devide(10, 5));
+
+// void and never
+const logger = (msg: string): void => {
+  console.log(msg);
+};
+const error = (msg: string): never => {
+  throw new Error(msg);
+};
