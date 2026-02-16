@@ -22,7 +22,7 @@ const logNumber: (i: number) => void = (i: number): void => {
 };
 logNumber(100);
 
-// the any type
+// use annotaions when the retuen of function is any
 let json = '{x:10,y:20}';
 let jsonParse: { x: number; y: number } = JSON.parse(json);
 console.log(jsonParse.x);
@@ -32,4 +32,11 @@ let colors = ['red', 'green', 'blue'];
 let word: string;
 for (let i = 0; i < colors.length; i++) {
   if (colors[i] === 'green') word = colors[i];
+}
+
+// use annotations when we want variable to have different type that can't be inferred even declaration & initialization
+let nums = [1, 0, -10];
+let numberAboveZero: boolean | number = false;
+for (let i = 0; i < nums.length; i++) {
+  if (nums[i] > 0) numberAboveZero = nums[i];
 }
