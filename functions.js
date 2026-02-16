@@ -1,9 +1,8 @@
 // annotaions around functions
-const add = (a: number, b: number): number => {
-  return a + b;
+var add = function (a, b) {
+    return a + b;
 };
 console.log(add(10, 30));
-
 // type infernce around function
-const subtract = (a: number, b: number): number => a - b;
+var subtract = function (a, b) { return a - b; };
 console.log(subtract(10, 5));
