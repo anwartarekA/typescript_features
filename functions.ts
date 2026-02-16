@@ -21,3 +21,20 @@ const logger = (msg: string): void => {
 const error = (msg: string): never => {
   throw new Error(msg);
 };
+
+const todaysWeather = {
+  date: new Date(),
+  today: 'sunny',
+};
+
+const weather = (forecast: { date: Date; today: string }): void => {
+  console.log(forecast.date);
+  console.log(forecast.today);
+};
+weather(todaysWeather);
+// destructuring
+const weather2 = ({ date, today }: { date: Date; today: string }): void => {
+  console.log(date);
+  console.log(today);
+};
+weather2(todaysWeather);
