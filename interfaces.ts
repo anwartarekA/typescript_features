@@ -1,15 +1,19 @@
 interface Vehicle {
   name: string;
-  year: number;
+  year: Date;
   broken: boolean;
+  summary(): string;
 }
 const oldCivic = {
   name: 'civic',
-  year: 2000,
+  year: new Date(),
   broken: true,
+  summary(): string {
+    return `name:${this.name}\n year:${this.year.getFullYear()}\nbroken?${this.broken}`;
+  },
 };
 
-const printVehicle = ({ name, year, broken }: Vehicle): void => {
-  console.log(`vehicle name:${name}, version:${year}, is it broken? ${broken}`);
+const printSummary = (vehicle: Vehicle): void => {
+  console.log(vehicle.summary());
 };
-printVehicle(oldCivic);
+printSummary(oldCivic);
