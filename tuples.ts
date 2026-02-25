@@ -1,2 +1,5 @@
-const pepsi: [string, boolean, number] = ['brown', true, 40];
-const tea: [string, boolean, number] = ['brown', false, 20];
+type Drink = [string, boolean, number];
+
+const pepsi: Drink = ['brown', true, 40];
+const tea: Drink = ['brown', false, 20];
+const milk: Drink = ['white', true, 30];
