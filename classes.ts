@@ -1,9 +1,7 @@
 class Vehicle {
   // protected color: string = 'red';
-  protected color;
-  constructor(color: string) {
-    this.color = color;
-  }
+  // protected color;
+  constructor(protected color: string) {}
   protected driveCar(): void {
     console.log('hahahahah');
   }
