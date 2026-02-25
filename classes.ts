@@ -1,4 +1,5 @@
 class Vehicle {
+  color: string = 'red';
   protected driveCar(): void {
     console.log('hahahahah');
   }
@@ -6,7 +7,7 @@ class Vehicle {
 
 class Car extends Vehicle {
   private drive(): void {
-    console.log('vroom vroom');
+    console.log('vroom vroom and it has color', this.color);
   }
   honk(): void {
     console.log('beep beep');
